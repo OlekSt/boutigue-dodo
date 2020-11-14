@@ -23,6 +23,14 @@ class Order(models.Model):
     order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
 
+
+    def _generate_order_number(self):
+        """
+        Generate a random, unique order number using UUID
+        """
+        return uuid.uuid4().hex.upper()
+
+
     def update_total(self):
         """
         Update grand total each time a line item is added,
@@ -35,6 +43,7 @@ class Order(models.Model):
             self.delivery_cost = 0
         self.grand_total = self.order_total + self.delivery_cost
         self.save()
+
 
     def save(self, *args, **kwargs):
         """

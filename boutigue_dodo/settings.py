@@ -101,6 +101,9 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
+
 SITE_ID = 1
 
 WSGI_APPLICATION = 'boutigue_dodo.wsgi.application'

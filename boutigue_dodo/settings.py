@@ -27,7 +27,7 @@ SECRET_KEY = '3w3vbu9rv#^mx0qvimmbvx9-(03=h_rk&3yp5w9i&fd9_!!kqk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['OlekSt/boutigue-dodo.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['boutigue-dodo.herokuapp.com', 'localhost']
 
 
 # Application definition

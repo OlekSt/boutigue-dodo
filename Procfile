@@ -1,0 +1,1 @@
+web gunicorn boutigue-dodo.wsgi:application

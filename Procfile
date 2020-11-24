@@ -1,1 +1,1 @@
-web gunicorn boutigue-dodo.wsgi:application
+web gunicorn boutigue_dodo.wsgi:application
